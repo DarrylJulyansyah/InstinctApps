@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Dashboard Instinct.">
+<Layout title="Dashboard Instinct">
 	  <!-- Begin page -->
 	  <div id="layout-wrapper">
 		<header id="page-topbar">
@@ -40,131 +40,35 @@ import Layout from '../layouts/Layout.astro';
 								</div>
 							</form>
 						</div>
-					</div>
-
-				
-					
+					</div>			
 					<div class="dropdown d-none d-lg-inline-block ms-1">
 						<button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
 							<i class="bx bx-fullscreen"></i>
 						</button>
 					</div>
-
 					<div class="dropdown d-inline-block">
 						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
 							aria-labelledby="page-header-notifications-dropdown">
-							<div class="p-3">
-								<div class="row align-items-center">
-									<div class="col">
-										<h6 class="m-0" key="t-notifications"> Notifications </h6>
-									</div>
-									<div class="col-auto">
-										<a href="#!" class="small" key="t-view-all"> View All</a>
-									</div>
-								</div>
-							</div>
-							<div data-simplebar style="max-height: 230px;">
-								<a href="javascript: void(0);" class="text-reset notification-item">
-									<div class="d-flex">
-										<div class="avatar-xs me-3">
-											<span class="avatar-title bg-primary rounded-circle font-size-16">
-												<i class="bx bx-cart"></i>
-											</span>
-										</div>
-										<div class="flex-grow-1">
-											<h6 class="mb-1" key="t-your-order">Your order is placed</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a href="javascript: void(0);" class="text-reset notification-item">
-									<div class="d-flex">
-										<img src="assets/images/users/avatar-3.jpg"
-											class="me-3 rounded-circle avatar-xs" alt="user-pic">
-										<div class="flex-grow-1">
-											<h6 class="mb-1">James Lemire</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a href="javascript: void(0);" class="text-reset notification-item">
-									<div class="d-flex">
-										<div class="avatar-xs me-3">
-											<span class="avatar-title bg-success rounded-circle font-size-16">
-												<i class="bx bx-badge-check"></i>
-											</span>
-										</div>
-										<div class="flex-grow-1">
-											<h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-											</div>
-										</div>
-									</div>
-								</a>
-
-								<a href="javascript: void(0);" class="text-reset notification-item">
-									<div class="d-flex">
-										<img src="assets/images/users/avatar-4.jpg"
-											class="me-3 rounded-circle avatar-xs" alt="user-pic">
-										<div class="flex-grow-1">
-											<h6 class="mb-1">Salena Layfield</h6>
-											<div class="font-size-12 text-muted">
-												<p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
-												<p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="p-2 border-top d-grid">
-								<a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
-									<i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span> 
-								</a>
-							</div>
 						</div>
 					</div>
-
-					<div class="dropdown d-inline-block">
-						<div class="dropdown-menu dropdown-menu-end">
-							<!-- item-->
-							<a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
-							<a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> <span key="t-my-wallet">My Wallet</span></a>
-							<a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i class="bx bx-wrench font-size-16 align-middle me-1"></i> <span key="t-settings">Settings</span></a>
-							<a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">Lock screen</span></a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item text-danger" href="#"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
-						</div>
-					</div>
-
 					<div class="dropdown d-inline-block">
 						<button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
 							<i class="bx bx-cog bx-spin"></i>
 						</button>
 					</div>
-
+					<a class="dropdown-item text-danger" href="/"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
 				</div>
 			</div>
 		</header>
 
 		<!-- ========== Left Sidebar Start ========== -->
 		<div class="vertical-menu">
-
 			<div data-simplebar class="h-100">
-
-				<!--- Sidemenu -->
+			<!--- Sidemenu -->
 				<div id="sidebar-menu">
 					<!-- Left Menu Start -->
 					<ul class="metismenu list-unstyled" id="side-menu">
-						<li class="menu-title" key="t-menu">Menu</li>
-						
+						<p><a href="/" class="d-inline-flex focus-ring focus-ring-primary py-1 px-2 text-decoration-none border rounded-2">Menu</a></p>
 						<li class="menu-title" key="t-apps">Assets</li>
 						<li>
 							<a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -172,10 +76,10 @@ import Layout from '../layouts/Layout.astro';
 								<span key="t-dashboards">Assets Pelindo</span>
 							</a>
 							<ul class="sub-menu" aria-expanded="false">				
-								<li><a href="/maintenance" key="t-dashboards">Endpoint</a></li>
+								<li><a href="/endpoint" key="t-dashboards">Endpoint | Server </a></li>
 							</ul>
 							<ul class="sub-menu" aria-expanded="false">				
-								<li><a href="/maintenance" key="t-dashboards">Server</a></li>
+								<li><a href="/maintenance" key="t-dashboards">Web Server</a></li>
 							</ul>
 						</li>
 						<li class="menu-title" key="t-apps"> Report </li>
@@ -214,15 +118,15 @@ import Layout from '../layouts/Layout.astro';
 								<li><a href="/maintenance" key="t-dashboards">Generate Report Bulanan</a></li>
 							</ul>
 						</li>
+						<li>
+							<a class="dropdown-item text-danger" href="/"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
+						</ul>
 					</ul>
 				</div>
 				<!-- Sidebar -->
 			</div>
 		</div>
 		<!-- Left Sidebar End -->
-
-		
-
 		<!-- ============================================================== -->
 		<!-- Start right Content here -->
 		<!-- ============================================================== -->
@@ -240,7 +144,6 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 					<!-- end page title -->
-
 					<div class="row">
 						<div class="col-xl-4">
 							<div class="card overflow-hidden">
@@ -248,7 +151,8 @@ import Layout from '../layouts/Layout.astro';
 									<div class="row">
 										<div class="col-7">
 											<div class="text-primary p-3">
-												<h2 class="text-primary">Welcome Back Darryl!</h2>
+												<h5 class="text-primary">Welcome Back Darryl !</h5>
+												<p>Cyber Security</p>
 											</div>
 										</div>
 										<div class="col-5 align-self-end">
@@ -262,7 +166,7 @@ import Layout from '../layouts/Layout.astro';
 											<div class="avatar-md profile-user-wid mb-4">
 												<img src="assets/images/users/avatar-1.jpeg" alt="" class="img-thumbnail rounded-circle">
 											</div>
-											<h5 class="font-size-15 text-truncate">Darryl Julyansyah</h5>
+											<h5 class="font-size-14 text-truncate">Darryl Julyansyah</h5>
 										</div>
 
 										<div class="col-sm-8">
@@ -287,7 +191,7 @@ import Layout from '../layouts/Layout.astro';
 										<div class="card-body">
 											<div class="d-flex">
 												<div class="flex-grow-1">
-													<p class="text-muted fw-medium">Asset</p>
+													<p class="text-muted fw-medium">Server</p>
 													<h4 class="mb-0">3131</h4>
 												</div>
 												<div class="flex-shrink-0 align-self-center">
@@ -309,7 +213,6 @@ import Layout from '../layouts/Layout.astro';
 													<p class="text-muted fw-medium">Endpoint</p>
 													<h4 class="mb-0">2424</h4>
 												</div>
-
 												<div class="flex-shrink-0 align-self-center ">
 													<div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
 														<span class="avatar-title rounded-circle bg-primary">
@@ -329,7 +232,6 @@ import Layout from '../layouts/Layout.astro';
 													<p class="text-muted fw-medium">website</p>
 													<h4 class="mb-0">4123</h4>
 												</div>
-
 												<div class="flex-shrink-0 align-self-center ">
 													<div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
 														<span class="avatar-title rounded-circle bg-primary">
@@ -343,9 +245,54 @@ import Layout from '../layouts/Layout.astro';
 								</div>
 							</div>
 						</div>
+						<!--Chart  -->
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h1>Top View</h1>
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-4">Risk Endpoint with Vulnerability</h4>
+                                        <div id="doughnut-chart" data-colors='["--bs-primary","--bs-warning", "--bs-danger","--bs-info", "--bs-success"]' class="e-charts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-4">Top Detection Endpoint</h4>
+                                        <div id="pie-chart" data-colors='["--bs-primary","--bs-warning", "--bs-danger","--bs-info", "--bs-success"]' class="e-charts"></div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-4">Top CVE </h4>
+                                        <div id="bar_chart" data-colors='["--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+								</div>
+                        </div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+
+					<!-- end main content-->
 			<footer class="footer">
 				<div class="container-fluid">
 					<div class="row">
@@ -361,13 +308,12 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</footer>
 		</div>
-		<!-- end main content-->
-
+	
 	</div>
 	<!-- Right Sidebar -->
 	<div class="right-bar">
-		<div data-simplebar class="h-100">
-			<div class="rightbar-title d-flex align-items-center px-3 py-4">
+		<div data-simplebar class="h-150">
+			<div class="rightbar-title d-flex align-items-center px-1 py-2">
 		
 				<h5 class="m-0 me-2">Settings</h5>
 
