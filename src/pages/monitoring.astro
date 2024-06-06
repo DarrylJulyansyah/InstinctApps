@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/LayoutMonitoring.astro';
+---
+<Layout title="Dashboard Instinct">
+		<div class="main-content">
+			<div class="page-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+								<h1 class="mb-sm-0 font-size-40">Monitoring Logs</h1>
+							</div>
+						</div>
+					</div>
+					<!-- end page title -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    </form>
+                                    <h3>Logs Attack</h3>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped-columns mb-0">
+                        
+                                            <thead>
+                                                <tr>
+                                                    <th>DateTime</th>
+                                                    <th>Rulename</th>
+                                                    <th>SourceIP</th>
+                                                    <th>DestinationIP</th>
+                                                    <th>Request</th>
+                                                    <th>BotURL</th>
+                                                    <th>UUID</th>
+                                                    <th>Severity</th>
+                                                    <th>Bloclist SourceIP / Payload</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">2024-06-07 03:28:48</th>
+                                                    <td>A web attack returned code 200 (success)
+                                                    </td>
+                                                    <td>213.109.202.145</td>
+                                                    <td>Prancis</td>
+                                                    <td> /index.php?action=resetbyquestions%20OR%20ROW%286967%2C3383%29%3E%28SELECT%20COUNT%28%2A%29%2CCONCAT%280x7170707871%2C%28SELECT%20%28ELT%286967%3D6967%2C1%29%29%29%2C0x71766a6b71%2CFLOOR%28RAND%280%29%2A2%29%29x%20FROM%20%28SELECT%204057%20UNION%20SELECT%208201%20UNION%20SELECT%207574%20UNION%20SELECT%202276%29a%20GROUP%20BY%20x%29--%20BcTs</td>
+                                                    <td>Windows 10</td>
+                                                    <td>Endpoint Protection</td>
+                                                    <td>Endpoint Protection</td>
+                                                    <td>Endpoint Protection</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2024-06-07 03:28:48</th>
+                                                    <td>Laptop Raiden</td>
+                                                    <td>11.96.35.69</td>
+                                                    <td>Raiden</td>
+                                                    <td>Windows</td>
+                                                    <td>Windows 10</td>
+                                                    <td>Endpoint Protection</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Zhongli</td>
+                                                    <td>78.96.65.65</td>
+                                                    <td>Childe</td>
+                                                    <td>Windows</td>
+                                                    <td>Windows 10</td>
+                                                    <td>Server Protection</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            </form>
+                            <h3>Logs Suspicious DNS </h3>
+                            <div class="table-responsive">
+                                <table class="table table-striped-columns mb-0">
+                
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Endpoint Hostname</th>
+                                            <th>Endpoint IP</th>
+                                            <th>Regional | Endpoint Grup</th>
+                                            <th>OS Type</th>
+                                            <th>OS Name</th>
+                                            <th>Protection manager</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Laptop Kazuha</td>
+                                            <td>20.36.98.32</td>
+                                            <td>Prancis</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Endpoint Protection</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Laptop Raiden</td>
+                                            <td>11.96.35.69</td>
+                                            <td>Raiden</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Endpoint Protection</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Zhongli</td>
+                                            <td>78.96.65.65</td>
+                                            <td>Childe</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Server Protection</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            </form>
+                            <h3>Malicious Malware on Endpoint</h3>
+                            <div class="table-responsive">
+                                <table class="table table-striped-columns mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Endpoint Hostname</th>
+                                            <th>Endpoint IP</th>
+                                            <th>Regional | Endpoint Grup</th>
+                                            <th>OS Type</th>
+                                            <th>OS Name</th>
+                                            <th>Protection manager</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Laptop Kazuha</td>
+                                            <td>20.36.98.32</td>
+                                            <td>Prancis</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Endpoint Protection</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Laptop Raiden</td>
+                                            <td>11.96.35.69</td>
+                                            <td>Raiden</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Endpoint Protection</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Zhongli</td>
+                                            <td>78.96.65.65</td>
+                                            <td>Childe</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Server Protection</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- End Page-content -->
+					<!-- end main content-->
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <script>document.write(new Date().getFullYear())</script>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="text-sm-end d-none d-sm-block">
+                                        Design & Develop by Instinct Company
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+</Layout>
+
+
