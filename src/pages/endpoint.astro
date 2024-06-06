@@ -1,130 +1,7 @@
 ---
 import Layout from '../layouts/LayoutEndpoint.astro';
-
 ---
 <Layout title="Endpoint Assets">
-    
-    <div id="layout-wrapper">
-		<header id="page-topbar">
-			<div class="navbar-header">
-				<div class="d-flex">
-					<!-- LOGO -->
-					<div class="navbar-brand-box">
-						<br>
-						<h1>Instinct</h1>
-					</div>
-					<button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
-						<i class="fa fa-fw fa-bars"></i>
-					</button>
-					<!-- App Search-->
-					<form class="app-search d-none d-lg-block">
-						<div class="position-relative">
-							<input type="text" class="form-control" placeholder="Search...">
-							<span class="bx bx-search-alt"></span>
-						</div>
-					</form>
-				</div>
-				<div class="d-flex">
-					<div class="dropdown d-inline-block d-lg-none ms-2">
-						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-							aria-labelledby="page-header-search-dropdown">
-	
-							<form class="p-3">
-								<div class="form-group m-0">
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
-										<div class="input-group-append">
-											<button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>			
-					<div class="dropdown d-none d-lg-inline-block ms-1">
-						<button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
-							<i class="bx bx-fullscreen"></i>
-						</button>
-					</div>
-					<div class="dropdown d-inline-block">
-						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"=
-							aria-labelledby="page-header-notifications-dropdown">
-						</div>
-					</div>
-					<div class="dropdown d-inline-block">
-						<button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-							<i class="bx bx-cog bx-spin"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-        </div>
-        
-
-		</header>
-
-        <div class="vertical-menu">
-			<div data-simplebar class="h-100">
-			<!--- Sidemenu -->
-				<div id="sidebar-menu">
-					<!-- Left Menu Start -->
-					<ul class="metismenu list-unstyled" id="side-menu">
-						<p><a href="/" class="d-inline-flex focus-ring focus-ring-primary py-1 px-2 text-decoration-none border rounded-2">Menu</a></p>
-						<li class="menu-title" key="t-apps">Assets</li>
-						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect">
-								<i class="bx bx-building"></i>
-								<span key="t-dashboards">Assets Pelindo</span>
-							</a>
-							<ul class="sub-menu" aria-expanded="false">				
-                                <li><a href="/endpoint" key="t-default">Endpoint | Server</a></li>
-                                <li><a href="/maintenance" key="t-saas">Web Server </a></li>
-							</ul>
-						</li>
-						<li class="menu-title" key="t-apps"> Report </li>
-						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect">
-								<i class="bx bxs-report"></i>
-								<span key="bi bi-card-list">Generate Report </span>
-							</a>
-							<ul class="sub-menu" aria-expanded="false">				
-								<li><a href="/maintenance" key="t-dashboards">Generate Report per Shift </a></li>
-								<li><a href="/maintenance" key="t-dashboards">Generate Report R2 Only</a></li>
-								<li><a href="/maintenance" key="t-dashboards">Generate Report Bulanan</a></li>
-							</ul>
-						</li>
-						<li class="menu-title" key="t-apps"> Monitoring </li>
-						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect">
-								<i class="bx bx-desktop"></i>
-								<span key="t-dashboards">Live Monitoring </span>
-							</a>
-							<ul class="sub-menu" aria-expanded="false">				
-								<li><a href="/maintenance" key="t-dashboards">Generate Report per Shift</a></li>
-								<li><a href="/maintenance" key="t-dashboards">Generate Report R2 Only</a></li>
-								<li><a href="/maintenance" key="t-dashboards">Generate Report Bulanan</a></li>
-							</ul>
-						</li>
-						<li class="menu-title" key="t-apps"> Event </li>
-						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect">
-								<i class="bx bx-list-ul"></i>
-								<span key="t-dashboards"> Create Event </span>
-							</a>
-							<ul class="sub-menu" aria-expanded="false">				
-								<li><a href="/maintenance" key="t-dashboards">Discord</a></li>
-								<li><a href="/maintenance" key="t-dashboards">Generate Report R2 Only</a></li>
-								<li><a href="/maintenance" key="t-dashboards">Generate Report Bulanan</a></li>
-							</ul>
-						</li>
-						<li>
-                        <a class="dropdown-item text-danger" href="/"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
-					</ul>
-				</div>
-			</div>
-		</div>
-    </div>
-</div>
 <div class="main-content">
     <div class="page-content">
         <div class="container-fluid">
@@ -134,11 +11,11 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                         <div class="card-body">
                             <div id="">
                                 <!-- Seller Details -->
-                                <button id="form-1" type="button" class="btn btn-outline-primary waves-effect waves-light">Add Endpoint Server</button>
-                                <button id="form-2" type="button" class="btn btn-outline-primary waves-effect waves-light">Add Endpoint User</button>
+                                 <h3>Isi Form Dibawah untuk menambahkan data pada Asset Pelindo</h3>
+                                <!-- <button id="form-1" type="button" class="btn btn-outline-primary waves-effect waves-light">Add Endpoint Server</button> -->
+                                <!-- <button id="form-2" type="button" class="btn btn-outline-primary waves-effect waves-light">Add Endpoint User</button> -->
                                 <section id="display-1">
                                     <br>
-                                    <h3>Endpoint Server</h3>
                                     <form>
                                         <div class="row">
                                             <div class="col-lg-6">
@@ -189,7 +66,7 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                                 </section>
     
                                 <!-- Company Document -->
-                                <section id="display-2" style="display: none">
+                                <!-- <section id="display-2" style="display: none">
                                     <br>
                                     <h3>Endpoint User</h3>
                                     <form>
@@ -240,7 +117,7 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                                         </div>
                                         <button type="button" class="btn btn-primary waves-effect waves-light">Submit</button>
                                     </form>
-                                </section>
+                                </section> -->
                             </div>
                         </div>
                         <!-- end card body -->
@@ -274,88 +151,48 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                                             <th>OS Type</th>
                                             <th>OS Name</th>
                                             <th>Protection manager</th>
+                                            <th>IP Public</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td>02NLM2105090PP3</td>
-                                            <td>10.2.23.94</td>
-                                            <td>@Tanjung perak</td>
+                                            <td>Laptop Kazuha</td>
+                                            <td>20.36.98.32</td>
+                                            <td>Prancis</td>
                                             <td>Windows</td>
                                             <td>Windows 10</td>
                                             <td>Endpoint Protection</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>@fat</td>
-                                            <td>@fat</td>
-                                            <td>@fat</td>
+                                            <td>Laptop Raiden</td>
+                                            <td>11.96.35.69</td>
+                                            <td>Raiden</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Endpoint Protection</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
-                                            <td>@twitter</td>
+                                            <td>Zhongli</td>
+                                            <td>78.96.65.65</td>
+                                            <td>Childe</td>
+                                            <td>Windows</td>
+                                            <td>Windows 10</td>
+                                            <td>Server Protection</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                
                         </div>
                     </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="right-bar">
-    <div data-simplebar class="h-150">
-        <div class="rightbar-title d-flex align-items-center px-1 py-2">
-    
-            <h5 class="m-0 me-2">Settings</h5>
 
-            <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
-                <i class="mdi mdi-close noti-icon"></i>
-            </a>
-        </div>
-
-        <!-- Settings -->
-        <hr class="mt-0" />
-        <h6 class="text-center mb-0">Choose Layouts</h6>
-
-        <div class="p-4">
-            <div class="mb-2">
-                <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
-            </div>
-
-            <div class="form-check form-switch mb-3">
-                <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
-                <label class="form-check-label" for="light-mode-switch">Light Mode</label>
-            </div>
-
-            <div class="mb-2">
-                <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
-            </div>
-            <div class="form-check form-switch mb-3">
-                <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
-                <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
-            </div>
-        </div>
-
-    </div> <!-- end slimscroll-menu-->
-</div>
-<!-- /Right-bar -->
-
-<!-- Right bar overlay-->
-<div class="rightbar-overlay"></div>
 <script>
     function dsf1(){
         $("#display-2").css({
