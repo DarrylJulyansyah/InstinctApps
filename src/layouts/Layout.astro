@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -37,12 +38,16 @@ import Sidebar from '../components/Sidebar.astro';
 		</script> -->
 	</head>
 	<body>
+		<!-- <div class="navbar">
+			<Navbar /> -->
 		<div class="sidebar">
 		  <Sidebar />
 		  <main class="content">
 			<slot />
 		  </main>
 		</div>
+		<div class="footer">
+			<Footer />
 	  </body>
 </html>
 <footer>

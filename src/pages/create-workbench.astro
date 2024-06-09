@@ -3,10 +3,8 @@ import Layout from "../layouts/LayoutCreateWorkbench.astro";
 ---
 <Layout title="Workbench | Create">
     <div class="main-content">
-
         <div class="page-content">
             <div class="container-fluid">
-
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
@@ -16,18 +14,41 @@ import Layout from "../layouts/LayoutCreateWorkbench.astro";
                     </div>
                 </div>
                 <!-- end page title -->
-
                 <form id="createproject-form" autocomplete="off" class="needs-validation" novalidate>
-                    
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="card">
                                 <div class="card-body">  
+                                    <div class="mb-3">
+                                        <label class="form-label" for="project-status-input">Severity</label>
+                                        <select class="form-select" id="project-status-input">
+                                            <option value="Completed" selected >Critical</option>
+                                            <option value="Inprogress" >High</option>
+                                            <option value="Inprogress" >Medium</option>
+                                            <option value="Inprogress" >Low</option>
+                                            <option value="Inprogress" >Info</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select Workbench Status</div>
+                                    </div>
+
+                                    <!-- Tags Workbench  -->
+                                    <div class="mb-3">
+                                        <label for="projectname-input" class="form-label">Tags</label> 
+                                        <input id="projectname-input" name="projectname-input" type="text" class="form-control" placeholder="Enter Tags Workbench..." required>
+                                        <div class="invalid-feedback">Silahkan Masukan Tags Workbench terlebih dahulu</div>
+                                    </div>
+
+                                    <!-- Action Workbench  -->
+                                    <div class="mb-3">
+                                        <label for="projectname-input" class="form-label">Action</label> 
+                                        <input id="projectname-input" name="projectname-input" type="text" class="form-control" placeholder="Enter Action Workbench..." required>
+                                        <div class="invalid-feedback">Silahkan Masukan Action Workbench terlebih dahulu</div>
+                                    </div>
+
                                     <input type="hidden" class="form-control" id="formAction" name="formAction" value="add">
                                     <input type="hidden" class="form-control" id="project-id-input">
                                     <div class="mb-3">
-                                        <label for="projectname-input" class="form-label">Judul Workbench</label>
-                                        
+                                        <label for="projectname-input" class="form-label">Judul Workbench</label> 
                                         <input id="projectname-input" name="projectname-input" type="text" class="form-control" placeholder="Enter Judul Workbench..." required>
                                         <div class="invalid-feedback">Silahkan Masukan Judul Workbench terlebih dahulu</div>
                                     </div>
@@ -141,19 +162,6 @@ import Layout from "../layouts/LayoutCreateWorkbench.astro";
             </div> <!-- container-fluid -->
         </div>
         <!-- End Page-content -->
-			<footer class="footer">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-6">
-						</div>
-						<div class="col-sm-6">
-							<div class="text-sm-end d-none d-sm-block">
-								Design & Develop by Instinct Company
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
 	</div>
 </Layout>
