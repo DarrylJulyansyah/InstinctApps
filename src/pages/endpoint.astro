@@ -10,123 +10,119 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                     <div class="card">
                         <div class="card-body">
                             <div id="">
-                                <!-- Seller Details -->
-                                 <h3>Isi Form Dibawah untuk menambahkan data</h3>
-                                <!-- <button id="form-1" type="button" class="btn btn-outline-primary waves-effect waves-light">Add Endpoint Server</button> -->
-                                <!-- <button id="form-2" type="button" class="btn btn-outline-primary waves-effect waves-light">Add Endpoint User</button> -->
-                                <section id="display-1">
-                                    <br>
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-pancard-input">Endpoint Hostname </label>
-                                                    <input type="text" class="form-control" id="basicpill-pancard-input" placeholder="Enter Endpoint Hostname">
-                                                </div>
+                                  <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row mb-2">
+                                            <div class="col-sm-4">
+                                                
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-vatno-input">Endpoint IP</label>
-                                                    <input type="text" class="form-control" id="basicpill-vatno-input"  placeholder="Enter Endpoint IP">
+                                            <div class="col-sm-8">
+                                                <div class="text-sm-end">
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#newOrderModal" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2 addOrder-modal"><i class="mdi mdi-plus me-1"></i> Add Endpoint</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-cstno-input">Regional | Endpoint Grup </label>
-                                                    <input type="text" class="form-control" id="basicpill-cstno-input" placeholder="Enter  Regional | Endpoint Grup">
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-servicetax-input">OS Type </label>
-                                                    <input type="text" class="form-control" id="basicpill-servicetax-input" placeholder="Enter OS Type ">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-companyuin-input">OS Name </label>
-                                                    <input type="text" class="form-control" id="basicpill-companyuin-input" placeholder="Enter OS Name ">
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-declaration-input">Protection manager</label>
-                                                    <input type="text" class="form-control" id="basicpill-Declaration-input" placeholder="Protection manager Details">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="btn btn-primary waves-effect waves-light">Submit</button>
-                                    </form>
-                                </section>
-    
-                                <!-- Company Document -->
-                                <!-- <section id="display-2" style="display: none">
-                                    <br>
-                                    <h3>Endpoint User</h3>
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-pancard-input">Endpoint Hostname</label>
-                                                    <input type="text" class="form-control" id="basicpill-pancard-input" placeholder="Enter Endpoint Hostname">
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-vatno-input">Endpoint IP</label>
-                                                    <input type="text" class="form-control" id="basicpill-vatno-input"  placeholder="Enter Endpoint IP">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-cstno-input">Regional | Endpoint Grup</label>
-                                                    <input type="text" class="form-control" id="basicpill-cstno-input" placeholder="Enter  Regional | Endpoint Grup">
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-servicetax-input">OS Type</label>
-                                                    <input type="text" class="form-control" id="basicpill-servicetax-input" placeholder="Enter OS Type">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-companyuin-input">OS Name </label>
-                                                    <input type="text" class="form-control" id="basicpill-companyuin-input" placeholder="Enter OS Name ">
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="basicpill-declaration-input">Protection manager</label>
-                                                    <input type="text" class="form-control" id="basicpill-Declaration-input" placeholder="Protection manager Details">
+                                        <div class="modal fade" id="newOrderModal" tabindex="-1" aria-labelledby="newOrderModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="" id="">Add Endpoint</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form autocomplete="off" class="needs-validation createorder-form" id="createorder-form" novalidate>
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <input type="hidden" class="form-control" id="orderid-input">
+                                                                    <div class="mb-3">
+                                                                        <label for="customername-field" class="form-label">EndpointHostname</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter name Endpoint" required />
+                                                                        <div class="invalid-feedback">Please enter a EndpointHostname</div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="customername-field" class="form-label">Endpoint IP</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter Endpoint IP" required />
+                                                                        <div class="invalid-feedback">Please enter a Endpoint IP</div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="customername-field" class="form-label">Regional | Endpoint Grup	</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter Regional | Endpoint Grup	" required />
+                                                                        <div class="invalid-feedback">Please enter a Regional | Endpoint Grup	</div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="customername-field" class="form-label">OS Type		</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter OS Type		" required />
+                                                                        <div class="invalid-feedback">Please enter a OS Type		</div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="customername-field" class="form-label">OS Name		</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter OS Name		" required />
+                                                                        <div class="invalid-feedback">Please enter a OS Name		</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="paystatus-input" class="form-label">Protection manager</label>
+                                                                        <select class="form-select" id="paystatus-input" required>
+                                                                            <option value="Chargeback" selected>Endpoint Protection</option>
+                                                                            <option value="Paid" >Server Protection</option>
+                                                                        </select>
+                                                                        <div class="invalid-feedback">Please select a payment status.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="col-lg-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="paymethod-input" class="form-label">Payment Method</label>
+                                                                        <select class="form-select" id="paymethod-input">
+                                                                            <option value="Mastercard">Mastercard</option>
+                                                                            <option value="Visa">Visa</option>
+                                                                            <option value="Paypal">Paypal</option>
+                                                                            <option value="COD">COD</option>
+                                                                        </select>
+                                                                        <div class="invalid-feedback">Please select a payment method.</div>
+                                                                    </div>
+                                                                </div> -->
+                                                                <div class="col-lg-12">
+                                                                    <div class="text-end">
+                                                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                                        <button type="submit" id="addNewOrder-btn" class="btn btn-success">Create</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary waves-effect waves-light">Submit</button>
-                                    </form>
-                                </section> -->
+                                
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="removeItemModal" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                <div class="modal-content">
+                                                    <div class="modal-body px-4 py-5 text-center">
+                                                        <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <div class="avatar-sm mb-4 mx-auto">
+                                                            <div class="avatar-title bg-primary text-primary bg-opacity-10 font-size-20 rounded-3">
+                                                                <i class="mdi mdi-trash-can-outline"></i>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-muted font-size-16 mb-4">Are you Sure You want to Remove this Order ?</p>
+                                                        
+                                                        <div class="hstack gap-2 justify-content-center mb-0">
+                                                            <button type="button" class="btn btn-danger" id="remove-item">Remove Now</button>
+                                                            <button type="button" class="btn btn-secondary" id="close-removeOrderModal" data-bs-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                             </div>
                         </div>
-                        <!-- end card body -->
                     </div>
-                    <!-- end card -->
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end row -->
             <div class="row">
                 <div class="col-xl-12">
                     <div class="card">
