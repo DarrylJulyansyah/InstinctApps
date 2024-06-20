@@ -8,3 +8,13 @@ bash
 2. Assets
 3. Report 
 4. Monitoring
+
+## What in the web?
+
+| Nomber | Description                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Default*  | Users can View various company assets by adding existing assets +<br/> |
+| 0          | Windows Installer is enabled for all applications. All install operations are allowed.                                                                                                                                                                                                                                                                                                                                                      |
+| 1          | Users can generate reports to provide an overview of what is happening in the network traffic of a company                                                                                                                                                                                                                        |
+| 2          | Users can directly see what activities have occurred in a company through direct monitoring                                                                                                                                                                                                                                                                                            |
+
