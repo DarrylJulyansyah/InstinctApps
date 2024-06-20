@@ -21,15 +21,15 @@ import Layout from '../layouts/LayoutWorkbench.astro';
                             <div class="card-body p-3">
                                 <form action="javascript:void(0);">
                                     <div class="row g-3">
-                                        <div class="col-xxl-4 col-lg-4">
+                                        <div class="col-xxl-5 col-lg-6">
                                             <div class="position-relative">
                                                 <input type="text" class="form-control" id="searchList" autocomplete="off" placeholder="Search Workbench">
                                             </div>
                                         </div>
                                         <!--end col-->             
                                         <div class="col-xxl-2 col-lg-2">
-                                            <div class="position- h-100 hstack gap-3 d-flex justify-content-between">
-                                                <button type="button" class="btn btn-primary waves-effect btn-label waves-light"onclick="anotherFunction();"><i class="bx bx-search label-icon"></i> Search</button>
+                                            <div class="position- h-100 hstack gap-1 d-flex justify-content-between">
+                                                <!-- <button type="button" class="btn btn-primary waves-effect btn-label waves-light"onclick="anotherFunction();"><i class="bx bx-search label-icon"></i> Search</button> -->
                                                 <a href="/create-workbench" type="button" class="btn btn-success waves-effect btn-label waves-light"onclick="anotherFunction();"><i class="bx bx-plus label-icon"></i> add </button></a>
                                             </div>
                                         </div> 
@@ -38,6 +38,8 @@ import Layout from '../layouts/LayoutWorkbench.astro';
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
                     <!--end col-->
                 </div>
                 <!--end row-->
@@ -242,5 +244,3 @@ import Layout from '../layouts/LayoutWorkbench.astro';
     </div>
     <!-- end main content-->
 </Layout>
-
-

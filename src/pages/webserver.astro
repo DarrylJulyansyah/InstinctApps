@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/LayoutEndpoint.astro';
+import Layout from '../layouts/LayoutWebServer.astro';
 ---
 <Layout title="Endpoint Assets">
 <div class="main-content">
@@ -16,11 +16,13 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                                     <div class="card-body">
                                         <div class="row mb-2">
                                             <div class="col-sm-4">
-                                                <h1 class="" id="">Here For Endpoint Management</h1>
+                                                <div class="col-sm-4">
+                                                    
+                                                </div>
                                             </div>
                                             <div class="col-sm-8">
                                                 <div class="text-sm-end">
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#newOrderModal" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2 addOrder-modal"><i class="mdi mdi-plus me-1"></i> Add Endpoint</button>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#newOrderModal" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2 addOrder-modal"><i class="mdi mdi-plus me-1"></i> Add Web Server</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -28,7 +30,7 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="" id="">Add Endpoint</h5>
+                                                        <h5 class="" id="">Add Web Server</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
@@ -37,41 +39,36 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                                                                 <div class="col-lg-12">
                                                                     <input type="hidden" class="form-control" id="orderid-input">
                                                                     <div class="mb-3">
-                                                                        <label for="customername-field" class="form-label">EndpointHostname</label>
-                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter name Endpoint" required />
-                                                                        <div class="invalid-feedback">Please enter a EndpointHostname</div>
+                                                                        <label for="customername-field" class="form-label">IP local</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter IP local<" required />
+                                                                        <div class="invalid-feedback">Please enter a IP local</div>
                                                                     </div>
                                                                     <div class="mb-3">
-                                                                        <label for="customername-field" class="form-label">Endpoint IP</label>
-                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter Endpoint IP" required />
-                                                                        <div class="invalid-feedback">Please enter a Endpoint IP</div>
+                                                                        <label for="customername-field" class="form-label">IP public</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter IP public" required />
+                                                                        <div class="invalid-feedback">Please enter a IP public</div>
                                                                     </div>
                                                                     <div class="mb-3">
-                                                                        <label for="customername-field" class="form-label">Regional | Endpoint Grup	</label>
-                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter Regional | Endpoint Grup	" required />
-                                                                        <div class="invalid-feedback">Please enter a Regional | Endpoint Grup	</div>
+                                                                        <label for="customername-field" class="form-label">Domain </label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter Domain " required />
+                                                                        <div class="invalid-feedback">Please enter a Domain </div>
                                                                     </div>
                                                                     <div class="mb-3">
-                                                                        <label for="customername-field" class="form-label">OS Type		</label>
-                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter OS Type		" required />
-                                                                        <div class="invalid-feedback">Please enter a OS Type		</div>
+                                                                        <label for="customername-field" class="form-label">SubDomain</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter SubDomain" required />
+                                                                        <div class="invalid-feedback">Please enter a SubDomain</div>
                                                                     </div>
                                                                     <div class="mb-3">
-                                                                        <label for="customername-field" class="form-label">OS Name		</label>
-                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter OS Name		" required />
-                                                                        <div class="invalid-feedback">Please enter a OS Name		</div>
+                                                                        <label for="customername-field" class="form-label">URL Web Server</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter URL Web Server" required />
+                                                                        <div class="invalid-feedback">Please enter a URL Web Server</div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-lg-6">
                                                                     <div class="mb-3">
-                                                                        <label for="paystatus-input" class="form-label">Protection manager</label>
-                                                                        <select class="form-select" id="paystatus-input" required>
-                                                                            <option value="Chargeback" selected>Endpoint Protection</option>
-                                                                            <option value="Paid" >Server Protection</option>
-                                                                        </select>
-                                                                        <div class="invalid-feedback">Please select a payment status.</div>
+                                                                        <label for="customername-field" class="form-label">Language Program</label>
+                                                                        <input type="text" id="customername-field" class="form-control" placeholder="Enter Language Program" required />
+                                                                        <div class="invalid-feedback">Please enter a Language Program</div>
                                                                     </div>
-                                                                </div>
+                                                                </div>  
                                                                 <!-- <div class="col-lg-6">
                                                                     <div class="mb-3">
                                                                         <label for="paymethod-input" class="form-label">Payment Method</label>
@@ -106,7 +103,7 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                 <div class="col-xl-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Endpoint User | Server has Added</h4>
+                            <h4 class="card-title">Web Server has Added</h4>
                             <form class="app-search d-none d-lg-block">
                                 <div class="position-relative">
                                     <input type="text" class="form-control" placeholder="Search...">
@@ -120,12 +117,12 @@ import Layout from '../layouts/LayoutEndpoint.astro';
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Endpoint Hostname</th>
-                                            <th>Endpoint IP</th>
-                                            <th>Regional | Endpoint Grup</th>
-                                            <th>OS Type</th>
-                                            <th>OS Name</th>
-                                            <th>Protection manager</th>
+                                            <th>IP local</th>
+                                            <th>IP public</th>
+                                            <th>Domain</th>
+                                            <th>SubDomain</th>
+                                            <th>URL Web Server</th>
+                                            <th>Language Program</th>
                                         </tr>
                                     </thead>
                                     <tbody>
